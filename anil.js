@@ -1,7 +1,7 @@
 function login(){
   var uname=document.getElementById("UserName").value;
   var pass=document.getElementById("Password").value;
-  if(uname=="Aishu" && pass=="Sis@123"){
+  if(uname=="Sweetie" && pass=="Mouni@123"){
     location.assign("html1.html")
   }
   else{
