@@ -21,6 +21,14 @@ let Academic;
 TextEditor(inputfields["academics"]).then(nEditor=>{
   Academic = nEditor
 })
+let projects;
+TextEditor(inputfields["projects"]).then(nEditor=>{
+  projects = nEditor
+})
+let Intrenships;
+TextEditor(inputfields["intrenship"]).then(nEditor=>{
+  intrenship = nEditor
+})
 
 
 
@@ -31,7 +39,8 @@ function toggle(){
          output.innerHTML=`
            <div class="hero">
             <h1>${inputfields["name"].value}</h1>
-            <h3>${inputfields["title"].value}</h3>
+            <h3>${inputfields["email"].value}</h3>
+            
            </div>
            <div class="main">
                <div>
@@ -49,8 +58,11 @@ function toggle(){
                 ${workExpdetails.getData()}
                 <h2>ACEMEDIC DETAILS</h2>
                  ${Academic.getData()}
-                <h2>PROJECTS</h2>
-                <p>${inputfields["projects"].value}</p>
+                 <h2>PROJECT DETAILS</h2>
+                ${projects.getData()}
+                <h2>INTRENSHIP DETAILS</h2>
+                ${intrenship.getData()}
+                
                </div>
            </div>
            <div class="btn">

@@ -1,6 +1,8 @@
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle,orange,green,blue,white,red,yellow,purple,orange,aqua,pink,indigo,hotpink,teal,black,brown);
+    background-repeat: no-repeat;
 }
 
 .input-fields{
