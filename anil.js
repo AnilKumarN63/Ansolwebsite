@@ -77,6 +77,8 @@ function toggle(){
                <div>
                 <h2>WORK EXPERIENCE</h2>
                 ${workExpdetails.getData()}
+                <h2>LANGUAGES</h2>
+                 <p>${inputfields["languages"].value}</p>
                 
                  <h2>PROJECT DETAILS</h2>
                 ${projects.getData()}

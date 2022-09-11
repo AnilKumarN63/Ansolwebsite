@@ -5,6 +5,6 @@ function login(){
         location.assign("mouni1.html")
     }
     else{
-        window.alert("WHO ARE YOU,WITHOUT KNOWING USERNAME AND PASSWORD HOW CAN U LOGIN")
+        window.alert("CONTACT HIM=6363069552")
     }
 }
