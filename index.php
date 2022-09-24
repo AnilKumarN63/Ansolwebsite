@@ -4,33 +4,33 @@
 <html lang="en-US">
 
 <head>
-      <title>Contact Us | <?php echo $domain; ?></title>
-      <meta name="title" content="Contact Us | <?php echo $domain; ?>">
+      <title>Privacy Policy | <?php echo $domain; ?></title>
+      <meta name="title" content="Privacy Policy | <?php echo $domain; ?>">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="language" content="English">
-      <meta name="description" content="Have Questions? Enquiries? Suggestions? Existential doubts? Our teams are ready to hear about them!.">
+      <meta name="description" content="This privacy policy has been compiled to better serve those who are concerned with how their ‘Personally Identifiable Information’ (PII).">
       <meta name="keywords" content="<?php echo $keyword ?>">
       <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
       <meta name="robots" content="index, follow">
-      <meta name="url" content="https://<?php echo $domain.'/contact-us'; ?>/">
+      <meta name="url" content="https://<?php echo $domain.'/privacy-policy'; ?>/">
       <meta name="author" content="Mubashir">
-      <link rel="canonical" href="https://<?php echo $domain.'/contact-us'; ?>/" />
+      <link rel="canonical" href="https://<?php echo $domain.'/privacy-policy'; ?>/" />
       <meta name="generator" content="HTML 5 and PHP 7.1" />
 
       <!-- Meta OG Property -->
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="article" />
-      <meta property="og:title" content="Contact Us | <?php echo $domain; ?>" />
-      <meta property="og:description" content="Questions? Enquiries? Suggestions? Existential doubts? Our teams are ready to hear about them!." />
-      <meta property="og:url" content="https://<?php echo $domain.'/contact-us'; ?>/" />
+      <meta property="og:title" content="Privacy Policy | <?php echo $domain; ?>" />
+      <meta property="og:description" content="This privacy policy has been compiled to better serve those who are concerned with how their ‘Personally Identifiable Information’ (PII)." />
+      <meta property="og:url" content="https://<?php echo $domain.'/privacy-policy'; ?>/" />
       <meta property="og:site_name" content="<?php echo $domain; ?>" />
 
       <!-- Twitter Card -->
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:description" content="Questions? Enquiries? Suggestions? Existential doubts? Our teams are ready to hear about them!." />
-      <meta name="twitter:title" content="Contact Us | <?php echo $domain; ?>" />
+      <meta name="twitter:description" content="This privacy policy has been compiled to better serve those who are concerned with how their ‘Personally Identifiable Information’ (PII)." />
+      <meta name="twitter:title" content="Privacy Policy | <?php echo $domain; ?>" />
 
       <!-- Base URL Set -->
       <base href="<?php echo $url ?>">
@@ -40,7 +40,7 @@
 
       <!-- Inline CSS --->
       <style type="text/css">
-          #contact{
+          #privacy{
             background: rgba(0,0,0,0.9);
             color: white;
             border-radius: 3px;
@@ -48,6 +48,7 @@
           }
           body{
                background: #ECEFF2;
+               
           }
       </style>
 </head>
@@ -57,25 +58,35 @@
 <?php  include '../navbar.php'; ?>
 
 <div class="intro-about">
-<div class="container-fluid ">
-      <h1 class="tbold">CONTACT US</h1>
-      <p class="h4">Questions? Enquiries? Suggestions? Existential doubts? Our teams are ready to hear about them!</p>
+<div class="container-fluid " style="word-spacing: 5px;">
+      <p class="h2 tbold">Privacy Policy<p>
       
-      <p class="h4">To get in touch with us, you can write mail directly to <?php echo $gmail; ?></p>
-      
-      <br><br>
-      <p class="text-center">
-        <a href="mailto:<?php echo $gmail ?>" class="btn btn-success btn-lg">Send Me a Mail</a>
+      <p class="h4 tbold"><?php echo $domain; ?> Privacy Policy</p>
+    
+      <p class="h4">This privacy policy has been compiled to better serve those who are concerned with how their ‘Personally Identifiable Information’ (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
+      </p>
+      <br>
+      <p class="h4 tbold">What personal information do we collect from the people that visit our website?</p>
+   
+      <p class="h4">
+          We do not collect any sort of data from users. This site does not require the users to be logged in.
       </p>
 
-      <br><br><br>
-      <p class="text-center">
-        <a href="<?php echo $url.'resume/introduction' ?>" class="btn btn-danger btn-lg">Create Resume Now</a>
-      </p>
+      <br>
+      <p class="h4 tbold">Do we use ‘cookies’?</p>
+     
+      <p class="h4">We do not use cookies. This is a basic website. Maybe in the future if this site is successful we will start using and storing cookies but for now we don't store or use cookies.</p>
+      <br>
+      <p class="h4 tbold">Contacting Us</p>
+      <p class="h4">If there are any questions regarding this privacy policy, you may contact us using the information below.</p>
+      <br>
+      <p class="h4 tbold">Contact : <?php echo $gmail ?></p>
+      <br>
+
+      <a href="mailto:<?php echo $gmail ?>" class="btn btn-success btn-lg">Send Me a Mail</a>
 
 </div>
-
-
+</div>
 <?php include '../footer.php'; ?>
 </body>
 </html>
