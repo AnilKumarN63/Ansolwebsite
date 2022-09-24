@@ -1,4 +1,4 @@
- <?php include '../../dbconnect.php'; 
+ <?php include '../dbconnect.php'; 
 
   $cont = 0;
  ?>
@@ -17,9 +17,9 @@
       <meta name="keywords" content="<?php echo $keyword ?>">
       <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
       <meta name="robots" content="index, follow">
-      <meta name="url" content="https://<?php echo $domain; ?>/resume/pro/information">
+      <meta name="url" content="https://<?php echo $domain; ?>/resume/information">
       <meta name="author" content="Mubashir">
-      <link rel="canonical" href="https://<?php echo $domain; ?>/resume/pro/information" />
+      <link rel="canonical" href="https://<?php echo $domain; ?>/resume/information" />
       <meta name="generator" content="HTML 5 and PHP 7.1" />
 
       <!-- Meta OG Property -->
@@ -27,7 +27,7 @@
       <meta property="og:type" content="article" />
       <meta property="og:title" content="Resume-Information  | <?php echo $domain; ?>" />
       <meta property="og:description" content="Impressive Resumes Made Easy! Get hired with the professional Perfect Resume that will make you stand out of the crowd! Start Now!" />
-      <meta property="og:url" content="https://<?php echo $domain; ?>/resume/pro/information" />
+      <meta property="og:url" content="https://<?php echo $domain; ?>/resume/information" />
       <meta property="og:site_name" content="<?php echo $domain; ?>" />
 
       <!-- Twitter Card -->
@@ -39,11 +39,11 @@
       <base href="<?php echo $url ?>">
 
       <!--- Include CSS files --->
-      <?php include"../../sitestyle.php"; ?>
+      <?php include"../sitestyle.php"; ?>
 
       <!-- Linear CSS --->
       <style type="text/css">
-        #education, #skill, #experience, #download, #mysum, #myhobby{
+        #education, #skill, #experience, #download{
           display: none;
         }
       </style>
@@ -51,89 +51,21 @@
 
 <body>
 
-<?php  include'../../navbar.php'; ?>
+<?php  include'../navbar.php'; ?>
 
 
 <br><br><br>
 <div class="container ">
-  <h3 class="text-center ">Required field is marked *</h3>
-<form action="resume/pro/" method="post" enctype="multipart/form-data" class="basic-grey">
+  <h4 class="text-center ">Required field is marked *</h4>
+<form action="output/resume
+
+<?php
+echo $_POST['tmp'];
+?>" method="post" class="basic-grey">
 <div class="col-md-1"></div>
   <div class="col-lg-10">
     <div class="cwell ">
             
-        <!-- SUMMARY -->
-        <div id="mysum">   
-        <div class="row">       
-            <div class="col-sm-12 ">
-                 <h1 class="text-center text-danger">About Me</h1>
-                 <p class="text-center">Write a short summary telling more about yourself, your strengths and experience. </p>
-                <br><br>
-            </div>
-            
-
-            <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span>* Profession: </span><br>
-                    <input name="profession" placeholder="eg.&nbsp; Photographer"  type="text" class="form-control" required="required" />
-                </div>
-            </div>
-
-             <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span>WebSite Link:</span><br>
-                    <input name="site" placeholder="eg.&nbsp; https://myportfolio.in"  type="text" class="form-control" />
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span> Facebook: </span><br>
-                    <input name="fb" placeholder="eg.&nbsp; daabir@Facebook"  type="text" class="form-control" />
-                </div>
-            </div>
-
-             <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span>Instagram:</span><br>
-                    <input name="insta" placeholder="eg.&nbsp; daabir@instagram"  type="text" class="form-control" />
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span> Twitter: </span><br>
-                    <input name="tw" placeholder="eg.&nbsp; daabir@twitter"  type="text" class="form-control" />
-                </div>
-            </div>
-
-             <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span>Linkedin:</span><br>
-                    <input name="link" placeholder="eg.&nbsp; daabir@linkedin"  type="text" class="form-control" />
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span>* About:</span><br>
-                    <textarea name="about" type="text" placeholder="eg. &nbsp; I am a successful software enginner."  class="form-control" required="required"></textarea>
-                </div>
-            </div>            
-        </div>
-      
-      <div class="row">
-        <div class="col-md-1 col-sm-1 col-xs-1">
-              <a onclick="forbasic()" class="btn btn-danger">&lt;&lt;BACK</a>
-        </div>
-        
-         <div class="col-md-11 col-sm-11 col-xs-11 text-right">
-              <a onclick="hobby()" class="btn btn-danger ">NEXT&gt;&gt;</a> 
-        </div>
-      </div>
-    </div>
-
-
         <!-- Personal Information -->
         <div id="basic" >   
         <div class="row">       
@@ -146,11 +78,10 @@
 
             <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                    <span> * Full Name: </span><br>
+                    <span>* Full Name: </span><br>
                     <input name="name" placeholder="eg.&nbsp; jame lee"  type="text" class="form-control" required="required" />
                 </div>
             </div>
-
             <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
                     <span>* Address:</span><br>
@@ -174,67 +105,16 @@
 
             <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                     <span>* Profile Pic: (Image must be less than 2mb)</span><br>
-                     <input class="form-control" type="file" name="pic" placeholder="select your profile picture" required="required" />
+                     <span>Objective:</span><br>
+                     <textarea name="object" type="text" placeholder="eg.&nbsp; i need job for money." class="form-control"></textarea>
                 </div>
             </div>
             
-
-        </div>
-      
-      <div class="row">
-        <div class="col-md-1 col-sm-1 col-xs-1">
-              <a href="<?php echo $url."resume/templates" ?>" class="btn btn-danger">&lt;&lt;BACK</a>
-        </div>
-        
-         <div class="col-md-11 col-sm-11 col-xs-11 text-right">
-              <a onclick="mysum()" class="btn btn-danger ">NEXT&gt;&gt;</a> 
-        </div>
-      </div>
-    </div>
-    <!-- basic end-->
-
-      <!-- Hobby -->
-        <div id="myhobby">   
-        <div class="row">       
-            <div class="col-sm-12 ">
-                 <h1 class="text-center text-danger">Hobby</h1>
-                 <p class="text-center">Write your any 4 hobbies.</p>
-                <br><br>
-            </div>
-            
-            <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span>Hobby 1:</span><br>
-                    <input name="h1" placeholder="eg. &nbsp;Dancing"  type="text" class="form-control" />
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span>Hobby 2:</span><br>
-                    <input name="h2" placeholder="eg. &nbsp;Watching Movie"  type="text" class="form-control" />
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span>Hobby 3:</span><br>
-                    <input name="h3" placeholder="eg. &nbsp;Photography"  type="text" class="form-control" />
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-sm-6">
-                <div class="form-group">
-                    <span>Hobby 4:</span><br>
-                    <input name="h4" placeholder="eg. &nbsp;Coding"  type="text" class="form-control" />
-                </div>
-            </div>
         </div>
       
       <div class="row">
         <div class="col-md-1 col-sm-1 col-xs-1 ">
-              <a onclick="mysum()" class="btn btn-danger">&lt;&lt;BACK</a>
+              <a href="<?php echo $url."resume/templates" ?>" class="btn btn-danger">&lt;&lt;BACK</a>
         </div>
         
          <div class="col-md-11 col-sm-11 col-xs-11 text-right">
@@ -242,8 +122,7 @@
         </div>
       </div>
     </div>
-    <!-- Social End -->
-
+      
         <!-- Education Information -->
         <div id="education">
           <div class="row">
@@ -255,41 +134,44 @@
             </div>
             
 
-            <div class="col-lg-6 col-sm-6 inpbox">
+            <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Year</span><br>
-                    <input name="edudate1" placeholder="eg.&nbsp; 2012-2016"  type="text" class="form-control" />
+                  <span>Education 1</span><br>
+                    <input name="ed1" placeholder="eg.&nbsp; school 10th"  type="text" class="form-control" />
                 </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Heading</span><br>
-                    <input name="eduhead1" placeholder="eg.&nbsp; School"  type="text" class="form-control" />
+                    <span>Education 2</span><br>
+                    <input name="ed2" placeholder="eg.&nbsp; school 12th"  type="text" class="form-control"/>
                 </div>
+            </div>
+       
+             <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Description</span><br>
-                   <textarea name="edudesc1" placeholder="eg.&nbsp; I am completing my schooling in xyz."   class="form-control" ></textarea>
+                    <span>Education 3</span><br>
+                    <input name="ed3" placeholder="eg.&nbsp; graduation"  type="text" class="form-control" />
                 </div>
             </div>
 
-            <div class="col-lg-6 col-sm-6 inpbox">
+            <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Year</span><br>
-                    <input name="edudate2" placeholder="eg.&nbsp; 2016-2020"  type="text" class="form-control" />
-                </div>
-                <div class="form-group">
-                  <span>Heading</span><br>
-                    <input name="eduhead2" placeholder="eg.&nbsp; BE"  type="text" class="form-control" />
-                </div>
-                <div class="form-group">
-                  <span>Description</span><br>
-                  <textarea name="edudesc2" placeholder="eg.&nbsp; I am completing my BE in xyz."   class="form-control"></textarea>
+                    <span>Education 4</span><br>
+                    <input name="ed4" placeholder="eg. &nbsp;Phd"  type="text" class="form-control" />
                 </div>
             </div>
-           
+
+            <div class="col-lg-6 col-sm-6">
+                <div class="form-group">
+                  <span>Education 5</span><br>
+                     <input name="ed5" placeholder="eg.&nbsp; other" type="text" class="form-control"  />
+                </div>
+            </div>
         </div>
-        <br>
+        
         <div class="row">
         <div class="col-md-1 col-sm-1 col-xs-1">
-              <a onclick="hobby()" class="btn btn-danger">&lt;&lt;BACK</a>
+              <a onclick="forbasic()" class="btn btn-danger">&lt;&lt;BACK</a>
         </div>
 
          <div class="col-md-11 col-sm-11 col-xs-11 text-right ">
@@ -303,59 +185,39 @@
           <div class="row">
             <div class="col-sm-12">
                 
-                <h1 class="text-center text-danger">Skills</h1>
-                <p class="text-center">Highlight of your top 5 skills.</p>
+                <h1 class="text-center text-danger">Skills & Abilities</h1>
+                <p class="text-center">Highlight of your 3 top skills.</p>
                 <br><br>
             </div>
             
 
-            <div class="col-lg-6 col-sm-6 inpbox">
+            <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Skill 1</span><br>
-                    <input name="skill1" placeholder="eg.&nbsp; HTML" type="text" class="form-control" /><br>
-                    <span>Skill Percentage</span><br>
-                    <input name="skill1pr" placeholder="eg.&nbsp; 90" type="Number" class="form-control" />
+                  <span>Skills 1</span><br>
+                    <input name="ski" placeholder="eg.&nbsp; Photography" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="form-group">
+                    <span>Skills 2</span><br>
+                    <input name="ski" placeholder="eg.&nbsp; Pyhton"  type="text" class="form-control"/>
+                </div>
+            </div>
+       
+             <div class="col-lg-6 col-sm-6">
+                <div class="form-group">
+                    <span>Skills 3</span><br>
+                    <input name="ski2" placeholder="eg.&nbsp; Data Entry"  type="text" class="form-control" />
                 </div>
             </div>
 
-            <div class="col-lg-6 col-sm-6 inpbox">
+            <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Skill 2</span><br>
-                    <input name="skill2" placeholder="eg.&nbsp; CSS" type="text" class="form-control" /><br>
-                    <span>Skill Percentage</span><br>
-                    <input name="skill2pr" placeholder="eg.&nbsp; 90" type="Number" class="form-control" />
+                    <span>Skills 4</span><br>
+                    <input name="ski3" placeholder="eg.&nbsp; Typing"  type="text" class="form-control" />
                 </div>
             </div>
-            <div class="col-lg-12 col-sm-12"><br></div>
-            <div class="col-lg-6 col-sm-6 inpbox">
-                <div class="form-group">
-                  <span>Skill 3</span><br>
-                    <input name="skill3" placeholder="eg.&nbsp; Javascript" type="text" class="form-control" /><br>
-                    <span>Skill Percentage</span><br>
-                    <input name="skill3pr" placeholder="eg.&nbsp; 85" type="Number" class="form-control" />
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-sm-6 inpbox">
-                <div class="form-group">
-                  <span>Skill 4</span><br>
-                    <input name="skill4" placeholder="eg.&nbsp; PHP" type="text" class="form-control" /><br>
-                    <span>Skill Percentage</span><br>
-                    <input name="skill4pr" placeholder="eg.&nbsp; 80" type="Number" class="form-control" />
-                </div>
-            </div>
-            <div class="col-lg-12 col-sm-12"><br></div>
-            <div class="col-lg-6 col-sm-6 inpbox">
-                <div class="form-group">
-                  <span>Skill 5</span><br>
-                    <input name="skill5" placeholder="eg.&nbsp; Python" type="text" class="form-control" /><br>
-                    <span>Skill Percentage</span><br>
-                    <input name="skill5pr" placeholder="eg.&nbsp; 70" type="Number" class="form-control" />
-                </div>
-            </div>
-            
         </div>
-        <br>
         <div class="row">
         <div class="col-md-1 col-sm-1 col-xs-1">
               <a onclick="foreducation()" class="btn btn-danger">&lt;&lt;BACK</a>
@@ -380,65 +242,56 @@
             </div>
             
 
-            <div class="col-lg-6 col-sm-6 inpbox">
+            <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Year</span><br>
-                    <input name="exdate1" placeholder="eg.&nbsp; 2018-2019"  type="text" class="form-control" />
+                    <span>Work 1:</span><br>
+                    <input name="tit_ex" placeholder="eg.&nbsp; Project 1" type="text" class="form-control" />
+                    <textarea name="desc_ex" placeholder="eg.&nbsp; Project 1 Description" class="form-control mt"></textarea>
                 </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Job Title</span><br>
-                    <input name="exjobt1" placeholder="eg.&nbsp; Vocational Tranning"  type="text" class="form-control" />
+                    <span>Work 2:</span><br>
+                    <input name="tit_ex2" placeholder="eg.&nbsp; Project 2" type="text" class="form-control" />
+                    <textarea name="desc_ex2" placeholder="eg.&nbsp; Project 2 Description" class="form-control mt"></textarea>
                 </div>
+            </div>
+       
+             <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Job Description</span><br>
-                  <textarea name="exdesc1" placeholder="eg.&nbsp; I am completing 30 days Vocational Training at Rays Technology Raipur in android app development.In this training i can developed a Wallpaper app." class="form-control" ></textarea>
+                    <span>Work 3:</span><br>
+                    <input name="tit_ex3" placeholder="eg.&nbsp; Project 3" type="text" class="form-control" />
+                    <textarea name="desc_ex3" placeholder="eg.&nbsp; Project 3 Description" class="form-control mt"></textarea>
                 </div>
             </div>
 
-            <div class="col-lg-6 col-sm-6 inpbox">
+            <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Year</span><br>
-                    <input name="exdate2" placeholder="eg.&nbsp; 2019"  type="text" class="form-control" />
-                </div>
-                <div class="form-group">
-                  <span>Job Title</span><br>
-                    <input name="exjobt2" placeholder="eg.&nbsp; Internship"  type="text" class="form-control" />
-                </div>
-                <div class="form-group">
-                  <span>Job Description</span><br>
-                  <textarea name="exdesc2" placeholder="eg.&nbsp; I am completing my summer Internship at Rays Technology Raipur in Python with Tkinter.In this training i can developed a Text_Editor."  class="form-control"></textarea>
+                    <span>Work 4:</span><br>
+                    <input name="tit_ex4" placeholder="eg.&nbsp; Project 4" type="text" class="form-control" />
+                    <textarea name="desc_ex4" placeholder="eg.&nbsp; Project 4 Description" class="form-control mt"></textarea>
                 </div>
             </div>
 
-            <div class="col-lg-12 col-sm-12"><br></div>
-
-
-            <div class="col-lg-6 col-sm-6 inpbox">
+            <div class="col-lg-6 col-sm-6">
                 <div class="form-group">
-                  <span>Year</span><br>
-                    <input name="exdate3" placeholder="eg.&nbsp; 2019-2020"  type="text" class="form-control" />
+                    <span>Work 5:</span><br>
+                    <input name="tit_ex5" placeholder="eg.&nbsp; Project 5" type="text" class="form-control" />
+                    <textarea name="desc_ex5" placeholder="eg. &nbsp;Project 5 Description" class="form-control mt"></textarea>
                 </div>
-                <div class="form-group">
-                  <span>Job Title</span><br>
-                    <input name="exjobt3" placeholder="eg.&nbsp; Internship"  type="text" class="form-control" />
-                </div>
-                <div class="form-group">
-                  <span>Job Description</span><br>
-                  <textarea name="exdesc3" placeholder="eg.&nbsp; I am completing my summer Internship at Effcon in Android App Development.In this training i can developed a Calculator app." class="form-control" ></textarea>
-                </div>
-            </div>
-         
+            </div>            
         </div>
         
 
 
     <div class="text-center" >
-    <br>
-      <input type="submit" name="sub" class="btn btn-info btn-lg tbold" value="Preview">
-      <br><br>
+        <br>
+    <button class="btn btn-success btn-lg tbold" name="sub" value="print">Print</button> &nbsp;&nbsp; 
+    <button class="btn btn-info btn-lg tbold" name="sub" value="doc">Download</button>
+    <br><br>
       <p><font color="red">Note:</font> if you have any problem for submission please fill out the required field.</p>
     <br>
-   
+    <br>
     </div>
   
   <div class="row">
@@ -452,90 +305,67 @@
 </form>
 </div>
 
-<?php include '../../footer.php'; ?>
+<?php include '../footer.php'; ?>
 
 <!-- Javascript --->
 <script type="text/javascript">
-
+  function forbasic() {
     var b = document.getElementById("basic");
     var e = document.getElementById("education");
     var s = document.getElementById("skill");
     var ex = document.getElementById("experience");
     var d = document.getElementById("download");
-    var mys = document.getElementById("mysum");
-    var myho = document.getElementById("myhobby");
-
-  function forbasic() {
 
     b.style.display = "block";
-    mys.style.display = "none";
     e.style.display = "none";
     s.style.display = "none";
     ex.style.display = "none";
-    d.style.display = "none";
-    myho.style.display = "none";
-    
+    d.style.display = "none";  
   }
 
     function foreducation() {
+    var b = document.getElementById("basic");
+    var e = document.getElementById("education");
+    var s = document.getElementById("skill");
+    var ex = document.getElementById("experience");
+    var d = document.getElementById("download");
 
-    e.style.display = "block";
-    myho.style.display = "none";
-    mys.style.display = "none";
     b.style.display = "none";
+    e.style.display = "block";
     s.style.display = "none";
     ex.style.display = "none";
-    d.style.display = "none";
-
+    d.style.display = "none";  
   }
 
 
   function forskill() {
+    var b = document.getElementById("basic");
+    var e = document.getElementById("education");
+    var s = document.getElementById("skill");
+    var ex = document.getElementById("experience");
+    var d = document.getElementById("download");
 
-    s.style.display = "block";
-    e.style.display = "none";
     b.style.display = "none";
+    e.style.display = "none";
+    s.style.display = "block";
     ex.style.display = "none";
-    d.style.display = "none";
-    mys.style.display = "none";
-    myho.style.display = "none";
-  
+    d.style.display = "none";  
   }
 
 
   function forexperience() {
+    var b = document.getElementById("basic");
+    var e = document.getElementById("education");
+    var s = document.getElementById("skill");
+    var ex = document.getElementById("experience");
+    var d = document.getElementById("download");
 
+    b.style.display = "none";
+    e.style.display = "none";
+    s.style.display = "none";
     ex.style.display = "block";
-    e.style.display = "none";
-    s.style.display = "none";
-    b.style.display = "none";
-    d.style.display = "none";
-    mys.style.display = "none";
-    myho.style.display = "none";
-
+    d.style.display = "none";  
   }
-
-  function mysum() {
-
-    mys.style.display = "block";
-    myho.style.display = "none";
-    e.style.display = "none";
-    s.style.display = "none";
-    b.style.display = "none";
-    d.style.display = "none";
-    ex.style.display = "none";
-  }
-
-  function hobby() {
-
-    myho.style.display = "block";
-    mys.style.display = "none";
-    e.style.display = "none";
-    s.style.display = "none";
-    b.style.display = "none";
-    d.style.display = "none";
-    ex.style.display = "none";
-      }
 
 </script>
 
